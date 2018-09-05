@@ -1,0 +1,4 @@
+<mat-grid-list cols="2" rowHeight="100px">
+  <app-cerveja-item [cerveja]="cerveja"
+                    *ngFor="let cerveja of cervejas | async"></app-cerveja-item>
+</mat-grid-list>
