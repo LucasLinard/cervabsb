@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {routing} from './app.routing';
 import { AppComponent } from './app.component';
@@ -13,6 +14,18 @@ import { EventoItemComponent } from './evento-item/evento-item.component';
 import { EventoListComponent } from './evento-list/evento-list.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { PaginaCompartilharComponent } from './pagina-compartilhar/pagina-compartilhar.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { LayoutModule } from '@angular/cdk/layout';
+
+import { MatToolbarModule
+  , MatButtonModule
+  , MatGridListModule
+  , MatSidenavModule
+  , MatIconModule
+  , MatListModule
+  , MatCardModule
+  , MatFormFieldModule
+  , MatInputModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -26,11 +39,24 @@ import { PaginaCompartilharComponent } from './pagina-compartilhar/pagina-compar
     EventoItemComponent,
     EventoListComponent,
     ContatosComponent,
-    PaginaCompartilharComponent
+    PaginaCompartilharComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule
+    , routing
     , BrowserAnimationsModule
+    , LayoutModule
+    , MatToolbarModule
+    , MatButtonModule
+    , MatGridListModule
+    , MatSidenavModule
+    , MatIconModule
+    , MatListModule
+    , MatCardModule
+    , MatFormFieldModule
+    , MatInputModule
+    , FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

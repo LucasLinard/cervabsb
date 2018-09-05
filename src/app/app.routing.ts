@@ -1,5 +1,4 @@
 import {RouterModule, Routes} from '@angular/router';
-import {AppComponent} from './app.component';
 import {SignupComponent} from './auth/signup/signup.component';
 import {LoginComponent} from './auth/login/login.component';
 import {EventoListComponent} from './evento-list/evento-list.component';
@@ -9,9 +8,7 @@ import {PaginaCompartilharComponent} from './pagina-compartilhar/pagina-comparti
 import {ContatosComponent} from './contatos/contatos.component';
 
 const APP_ROUTES: Routes = [
-  //   { path: '', component: AppComponent, pathMatch: 'full' }
-  // ,
-  { path: 'cadastro', component: SignupComponent }
+    { path: 'cadastro', component: SignupComponent }
   , { path: 'login', component: LoginComponent}
   , { path: 'eventos', component: EventoListComponent}
   , { path: 'cervejarias', component: CervejariaListComponent}
