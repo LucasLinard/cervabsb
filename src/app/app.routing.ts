@@ -3,16 +3,16 @@ import {SignupComponent} from './auth/signup/signup.component';
 import {LoginComponent} from './auth/login/login.component';
 import {EventoListComponent} from './evento-list/evento-list.component';
 import {CervejariaListComponent} from './cervejaria-list/cervejaria-list.component';
-import {CervejaListComponent} from './cerveja-list/cerveja-list.component';
 import {PaginaCompartilharComponent} from './pagina-compartilhar/pagina-compartilhar.component';
 import {ContatosComponent} from './contatos/contatos.component';
+import {CervejaGridComponent} from './cerveja-grid/cerveja-grid.component';
 
 const APP_ROUTES: Routes = [
     { path: 'cadastro', component: SignupComponent }
   , { path: 'login', component: LoginComponent}
   , { path: 'eventos', component: EventoListComponent}
   , { path: 'cervejarias', component: CervejariaListComponent}
-  , { path: 'produtos', component: CervejaListComponent}
+  , { path: 'produtos', component: CervejaGridComponent}
   , { path: 'contatos', component: ContatosComponent}
   , { path: 'compartilhamento', component: PaginaCompartilharComponent }
 

@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {routing} from './app.routing';
@@ -10,6 +11,7 @@ import { CervejaItemComponent } from './cerveja-item/cerveja-item.component';
 import { CervejaListComponent } from './cerveja-list/cerveja-list.component';
 import { CervejariaItemComponent } from './cervejaria-item/cervejaria-item.component';
 import { CervejariaListComponent } from './cervejaria-list/cervejaria-list.component';
+import { CervejaGridComponent } from './cerveja-grid/cerveja-grid.component';
 import { EventoItemComponent } from './evento-item/evento-item.component';
 import { EventoListComponent } from './evento-list/evento-list.component';
 import { ContatosComponent } from './contatos/contatos.component';
@@ -18,14 +20,14 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
 
 import { MatToolbarModule
-  , MatButtonModule
-  , MatGridListModule
-  , MatSidenavModule
-  , MatIconModule
-  , MatListModule
-  , MatCardModule
-  , MatFormFieldModule
-  , MatInputModule} from '@angular/material';
+, MatButtonModule
+, MatGridListModule
+, MatSidenavModule
+, MatIconModule
+, MatListModule
+, MatCardModule
+, MatFormFieldModule
+, MatInputModule, MatMenuModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { MatToolbarModule
     EventoListComponent,
     ContatosComponent,
     PaginaCompartilharComponent,
-    NavigationComponent
+    NavigationComponent,
+    CervejaGridComponent
   ],
   imports: [
     BrowserModule
@@ -56,9 +59,22 @@ import { MatToolbarModule
     , MatCardModule
     , MatFormFieldModule
     , MatInputModule
-    , FormsModule
+    , FormsModule, MatMenuModule
+    , FlexLayoutModule
   ],
-  providers: [],
+  exports: [
+    LayoutModule
+    , MatToolbarModule
+    , MatButtonModule
+    , MatSidenavModule
+    , MatIconModule
+    , MatListModule
+    , MatGridListModule
+    , MatCardModule
+    , MatFormFieldModule
+    , MatInputModule
+    ],
+    providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
