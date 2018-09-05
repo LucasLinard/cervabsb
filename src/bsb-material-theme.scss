@@ -1,0 +1,13 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$bsb-theme-primary: mat-palette($mat-red, 800, 600, 900);
+$bsb-theme-accent: mat-palette($mat-amber, 800, A400, 900);
+$bsb-theme-warn: mat-palette($mat-yellow);
+
+$bsb-app-theme: mat-light-theme($bsb-theme-primary, $bsb-theme-accent, $bsb-theme-warn);
+$bsb-app-dark-theme: mat-dark-theme($bsb-theme-primary, $bsb-theme-accent, $bsb-theme-warn);
+
+@include angular-material-theme($bsb-app-dark-theme)
+
