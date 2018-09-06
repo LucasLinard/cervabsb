@@ -1,10 +1,9 @@
 export class Cerveja {
-  public disponivel: true;
-
-  constructor(public nome: string,
+  constructor(public id: string,
+              public nome: string,
               public produtor: string,
               public urlImagem: string,
-              public descrição: string,
+              public descricao: string,
               public precoCusto: number,
               public precoVenda: number,
               public qtd_minima: number,

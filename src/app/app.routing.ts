@@ -6,13 +6,14 @@ import {CervejariaListComponent} from './cervejaria-list/cervejaria-list.compone
 import {PaginaCompartilharComponent} from './pagina-compartilhar/pagina-compartilhar.component';
 import {ContatosComponent} from './contatos/contatos.component';
 import {CervejaGridComponent} from './cerveja-grid/cerveja-grid.component';
+import {CervejaListComponent} from './cerveja-list/cerveja-list.component';
 
 const APP_ROUTES: Routes = [
     { path: 'cadastro', component: SignupComponent }
   , { path: 'login', component: LoginComponent}
   , { path: 'eventos', component: EventoListComponent}
   , { path: 'cervejarias', component: CervejariaListComponent}
-  , { path: 'produtos', component: CervejaGridComponent}
+  , { path: 'produtos', component: CervejaListComponent }
   , { path: 'contatos', component: ContatosComponent}
   , { path: 'compartilhamento', component: PaginaCompartilharComponent }
 

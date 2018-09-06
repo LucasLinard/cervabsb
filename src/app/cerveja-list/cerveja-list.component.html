@@ -1,4 +1,8 @@
-<mat-grid-list cols="2" rowHeight="100px">
-  <app-cerveja-item [cerveja]="cerveja"
-                    *ngFor="let cerveja of cervejas | async"></app-cerveja-item>
+<mat-grid-list  cols="4" rowHeight="450px" fxLayout="row" fxLayout.xs="column">
+  <mat-grid-tile
+    *ngFor="let cerveja of cervejas | async">
+    <app-cerveja-item class="dashboard-card"
+                      fxFlex="30%;" fxFlex.xs="90%"
+                      [cerveja]="cerveja"></app-cerveja-item>
+  </mat-grid-tile>
 </mat-grid-list>

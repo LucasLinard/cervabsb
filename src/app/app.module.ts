@@ -18,6 +18,9 @@ import { ContatosComponent } from './contatos/contatos.component';
 import { PaginaCompartilharComponent } from './pagina-compartilhar/pagina-compartilhar.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import {environment} from '../environments/environment';
 
 import { MatToolbarModule
 , MatButtonModule
@@ -28,6 +31,7 @@ import { MatToolbarModule
 , MatCardModule
 , MatFormFieldModule
 , MatInputModule, MatMenuModule} from '@angular/material';
+import {AuthService} from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -61,9 +65,11 @@ import { MatToolbarModule
     , MatInputModule
     , FormsModule, MatMenuModule
     , FlexLayoutModule
+    , AngularFireModule.initializeApp(environment.firebase)
+    , AngularFirestoreModule
   ],
   exports: [
-    LayoutModule
+      LayoutModule
     , MatToolbarModule
     , MatButtonModule
     , MatSidenavModule
@@ -74,7 +80,7 @@ import { MatToolbarModule
     , MatFormFieldModule
     , MatInputModule
     ],
-    providers: [],
+    providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

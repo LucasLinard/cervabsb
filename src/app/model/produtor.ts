@@ -1,2 +1,5 @@
 export class Produtor {
+
+  constructor() {
+  }
 }
