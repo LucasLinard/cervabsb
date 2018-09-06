@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -67,6 +68,7 @@ import {AuthService} from './auth/auth.service';
     , FlexLayoutModule
     , AngularFireModule.initializeApp(environment.firebase)
     , AngularFirestoreModule
+    , ReactiveFormsModule
   ],
   exports: [
       LayoutModule
