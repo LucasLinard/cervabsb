@@ -11,8 +11,8 @@
         matInput
         placeholder="Your email"
         formControlName="email">
-      <mat-hint>Please enter a valid email.</mat-hint>
-      <mat-error>Invalid or missing email.</mat-error>
+      <mat-hint>Por favor digite um email válido</mat-hint>
+      <mat-error>Campo email é obrigatório</mat-error>
     </mat-form-field>
     <mat-form-field>
       <input
@@ -20,8 +20,8 @@
         matInput
         placeholder="Your password"
         formControlName="password">
-      <mat-hint>Please enter your password.</mat-hint>
-      <mat-error>Missing password.</mat-error>
+      <mat-hint>Por favor digite sua senha</mat-hint>
+      <mat-error>Campo em branco</mat-error>
     </mat-form-field>
     <button type="submit" mat-raised-button color="primary" [disabled]="loginForm.invalid">Submit</button>
   </form>

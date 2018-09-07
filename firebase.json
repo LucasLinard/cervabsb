@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/cervabsb",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

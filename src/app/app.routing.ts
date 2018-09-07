@@ -13,7 +13,7 @@ const APP_ROUTES: Routes = [
   , { path: 'login', component: LoginComponent}
   , { path: 'eventos', component: EventoListComponent}
   , { path: 'cervejarias', component: CervejariaListComponent}
-  , { path: 'produtos', component: CervejaListComponent }
+  , { path: 'produtos', component: CervejaGridComponent }
   , { path: 'contatos', component: ContatosComponent}
   , { path: 'compartilhamento', component: PaginaCompartilharComponent }
 

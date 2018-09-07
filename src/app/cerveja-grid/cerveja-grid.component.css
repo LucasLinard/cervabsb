@@ -19,3 +19,12 @@
 .dashboard-card-content {
   text-align: center;
 }
+
+img {
+  max-height: 200px;
+  max-width: 200px;
+}
+.cerveja-header-image {
+  background-image: url('https://firebasestorage.googleapis.com/v0/b/cervejas-de-bsb.appspot.com/o/cerrado%2Fcerrado.jpg?alt=media&token=93277e3f-0d42-40c2-a7d5-ed84ebcb7ba9');
+  background-size: cover;
+}
